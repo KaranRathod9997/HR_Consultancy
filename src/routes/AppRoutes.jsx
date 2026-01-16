@@ -10,6 +10,9 @@ import Careers from "../pages/public/Careers";
 import Blog from "../pages/public/Blog";
 import Contact from "../pages/public/Contact";
 import BookDemo from "../pages/public/BookDemo";
+import AdminDashboard from "../pages/admin/AdminDashboard";
+import ProtectedAdminRoute from "../components/admin/ProtectedAdminRoute";
+import AdminLogin from "../pages/admin/AdminLogin";
 
 /* Scroll to top on route change */
 const ScrollToTop = () => {
@@ -88,6 +91,16 @@ const AppRoutes = () => {
             <MainLayout>
               <BookDemo />
             </MainLayout>
+          }
+        />
+
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route
+          path="/admin/dashboard"
+          element={
+            <ProtectedAdminRoute>
+              <AdminDashboard />
+            </ProtectedAdminRoute>
           }
         />
       </Routes>

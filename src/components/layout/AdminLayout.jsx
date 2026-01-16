@@ -1,9 +1,22 @@
-import React from 'react'
+import AdminSidebar from "../admin/AdminSidebar";
+import AdminHeader from "../admin/AdminHeader";
 
-const AdminLayout = () => {
+const AdminLayout = ({ children }) => {
   return (
-    <div>AdminLayout</div>
-  )
-}
+    <div className="flex min-h-screen bg-gray-50">
+      {/* SIDEBAR */}
+      <AdminSidebar />
 
-export default AdminLayout
+      {/* MAIN AREA */}
+      <div className="flex-1 flex flex-col">
+        <AdminHeader />
+
+        <main className="flex-1 p-6 overflow-y-auto">
+          {children}
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default AdminLayout;

@@ -21,13 +21,9 @@ import {
 } from "react-icons/hi";
 import { FiCheckCircle } from "react-icons/fi";
 import { FiTarget, FiEye } from "react-icons/fi";
-
-
-
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import InDemandCard from "../../components/common/InDemandCard";
-
 
 /* ---------------------------------- */
 /* DATA */
@@ -575,7 +571,7 @@ const Home = () => {
       <div className="flex items-start gap-4">
 
         {/* Icon */}
-        <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+        <div className="w-24 h-14 flex items-center justify-center rounded-xl bg-blue-100 text-blue-600">
           {activeTab === "mission" ? (
             <FiTarget className="text-2xl" />
           ) : (
@@ -591,8 +587,8 @@ const Home = () => {
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
             {activeTab === "mission"
-              ? "We are committed to delivering tailored HR solutions that help businesses streamline operations, boost productivity, and stay compliant. From HR setup to strategic consulting, we provide complete end-to-end support."
-              : "Our vision is to become a trusted HR growth partner by delivering innovative, people-centric, and compliance-driven HR solutions that empower organizations to scale confidently."}
+              ? "To deliver accurate, timely, and legally compliant HR solutions that reduce operational burden for our clients. We strive to add value by ensuring efficiency, compliance, and reliability in every engagement."
+              : "To empower organisations with accurate payroll and complete statutory compliance, enabling stress-free operations. We aspire to build compliant, efficient, and growth-oriented workplaces through reliable HR solutions."}
           </p>
         </div>
 
