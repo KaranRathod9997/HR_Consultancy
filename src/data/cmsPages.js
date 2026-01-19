@@ -1,0 +1,42 @@
+export const cmsPages = [
+  {
+    id: 1,
+    title: "About Us",
+    slug: "/about-us",
+    status: "published",
+    updatedAt: "2025-01-03",
+    author: "Admin",
+  },
+  {
+    id: 2,
+    title: "Privacy Policy",
+    slug: "/privacy-policy",
+    status: "published",
+    updatedAt: "2025-01-01",
+    author: "Admin",
+  },
+  {
+    id: 3,
+    title: "Terms of Service",
+    slug: "/terms-of-service",
+    status: "published",
+    updatedAt: "2024-12-28",
+    author: "Admin",
+  },
+  {
+    id: 4,
+    title: "Our Vision",
+    slug: "/vision",
+    status: "draft",
+    updatedAt: "2025-01-04",
+    author: "Editor",
+  },
+  {
+    id: 5,
+    title: "Our Mission",
+    slug: "/mission",
+    status: "published",
+    updatedAt: "2024-12-20",
+    author: "Admin",
+  },
+];

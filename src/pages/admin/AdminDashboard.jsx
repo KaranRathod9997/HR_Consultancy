@@ -1,28 +1,22 @@
-// import AdminLayout from "../../components/layout/AdminLayout";
-
-import AdminLayout from "../../components/layout/AdminLayout";
-
 const AdminDashboard = () => {
   return (
-    <AdminLayout>
-      <div className="p-6">
-        <h1 className="text-2xl font-bold text-gray-900 mb-6">
-          Dashboard
-        </h1>
+    <div>
+      <h1 className="text-2xl font-bold text-gray-900 mb-6">
+        Dashboard
+      </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <StatCard title="Total Clients" value="156" change="+12%" />
-          <StatCard title="Total Candidates" value="2,847" change="+8%" />
-          <StatCard
-            title="Job Openings"
-            value="24"
-            change="-5%"
-            negative
-          />
-          <StatCard title="Applications" value="892" change="+23%" />
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <StatCard title="Total Clients" value="156" change="+12%" />
+        <StatCard title="Total Candidates" value="2,847" change="+8%" />
+        <StatCard
+          title="Job Openings"
+          value="24"
+          change="-5%"
+          negative
+        />
+        <StatCard title="Applications" value="892" change="+23%" />
       </div>
-    </AdminLayout>
+    </div>
   );
 };
 
